@@ -154,7 +154,7 @@ td span{color:var(--muted);margin-left:6px;font-size:12.5px}
     }
     var html = '<optgroup label="常用">' + opts(top) + '</optgroup><optgroup label="其他">' + opts(rest) + "</optgroup>";
     $("from").innerHTML = html; $("to").innerHTML = html;
-    $("from").value = "SGD"; $("to").value = "CNY";
+    $("from").value = "USD"; $("to").value = "CNY";
   }
 
   function convert(amount, from, to) { return amount / rates[from] * rates[to]; }
